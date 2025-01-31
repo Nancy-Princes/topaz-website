@@ -1,0 +1,128 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px; /* Sidebar width */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.sidebar .logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 250px; /* Space for sidebar */
+    padding: 20px;
+    width: 100%;
+}
+
+/* Quote section */
+#quote {
+    background-color: #FFD700; /* Gold color for emphasis */
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
+}
+
+/* Section styling */
+section {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    color: #007BFF; /* A nice blue for section titles */
+}
+
+.service-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-image: url('lighting-decoration.jpg'); /* Background image for lighting decoration */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+/* Contact section */
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px; /* Adjusted margin */
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    .service-img {
+        width: 100%;
+    }
+}
